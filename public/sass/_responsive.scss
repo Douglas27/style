@@ -1,0 +1,107 @@
+@media screen and (max-width: 972px) {
+  header {
+    nav {
+      .col-md-4 {
+        display: flex;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 10px 0;
+      }
+    }
+
+    .hero {
+      .col {
+        .card {
+          height: 450px;
+
+          .content {
+            display: block;
+            max-width: 360px !important;
+            text-align: center !important;
+
+            .header {
+              h4 {
+                max-width: 320px;
+              }
+            }
+          }
+          
+          .svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    section {
+      &.start {
+        .now {
+          width: 350px !important;
+
+          form {
+            .col-md-6 {
+              &:nth-child(2) {
+                margin: 0 !important;
+              }
+            }
+          }
+        }
+      }
+
+      &.benefits {
+        .row {
+          .col-md-6 {
+            &:nth-child(2) {
+              display: flex;
+              justify-content: center !important;
+            }
+            
+            .svg {
+              svg {
+                width: 300px !important;
+              }
+            }
+          }
+        }
+      }
+
+      &.plans {
+        padding: 40px;
+
+        .box-1 { 
+          left: -5% !important;
+        }
+
+        .box-3 { 
+          left: -5% !important;
+        }
+
+        .box-4 {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .rodape {
+      padding: 50px 10px 0 10px !important;
+      
+      .row {
+        .col-md-6 {
+          &:nth-child(1) {
+            border: none !important;
+            text-align: center;
+          }
+
+          .logo {
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+  }
+}
