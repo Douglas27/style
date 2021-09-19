@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #363a3d;
+}
+
+@keyframes loadingx {
+  0% {width: 15px;}
+  50% {width: 35px;}
+  100% {width: 15px;}
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #000;
+}
+
+.load-x .line:nth-last-child(1) {animation: loadingx 1.5s 1s infinite;}
+.load-x .line:nth-last-child(2) {animation: loadingx 1.5s 0.5s infinite;}
+.load-x .line:nth-last-child(3) {animation: loadingx 1.5s 0s infinite;}
+
+.header {
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 90%);
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 90%);
+  min-height: 80vh;
+  background: #000;
+  padding-bottom: 12rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .header::after {
+    content: '';
+    background: url('/official/img/website-background.jpg') fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.header .logotipo {
+  padding: 0.6rem 0;
+}
+
+.header .logotipo a:hover {
+  text-decoration: none;
+}
+
+.header .logotipo .emoji {
+  position: relative;
+  left: 7px;
+}
+
+.header .nav-links ul {
+  padding: 0 0;
+}
+
+.header .nav-links ul li{
+  padding: 1.6rem 0 1.6rem 1.5rem;
+  display: inline-block;
+  color: #fff;
+}
+
+.header .nav-links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.header .nav-links ul li a:hover {
+  opacity: 0.8;
+}
+
+.header .header-content {
+  color: #fff;
+  text-align: center;
+}
+
+.header .header-content h2 {
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+
+.header .header-content .btn-sign-up {
+  padding: 1rem 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.header .header-content .info {
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+}
+
+.video {
+  margin-bottom: -5rem;
+}
+
+.index-video {
+  position: relative;
+  top: -120px;
+  max-width: 100%;
+  border-radius: 0.2rem;
+  border: 3px solid #fff;
+}
+
+.statistics .num-sales {
+  text-align: center;
+}
+
+.statistics .num-sales .num {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.statistics .num-sales .description {
+  margin-top: -1.6rem;
+}
+
+.statistics .num-stores .num {
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.statistics .num-satisfaction .num {
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.statistics .num-satisfaction .num i {
+  position: relative;
+  top: -7px;
+  font-size: 1.6rem;
+}
+
+.plans .plan-container {
+  max-width: 480px;
+}
+
+.plans .plan-container .content {
+  padding: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#7f59dc), to(#655be6));
+  background: linear-gradient(to right, #7f59dc, #655be6);
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+.plans .plan-container .content .title {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.plans .plan-container .content .title .badge {
+  position: relative;
+  top: -3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.plans .plan-container .content .description {
+  text-align: justify;
+}
+
+.plans .plan-container .content .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.plans .plan-container .content .btn {
+  margin: 1.8rem auto 2.2rem;
+  padding: 0.8rem 1.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.plans .plan-container .content .separator {
+  margin: 1.4rem 0 1.8rem;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.plans .plan-container .content .item-strong {
+  font-weight: 700;
+}
+
+.plans .plan-container .content .details {
+  display: none;
+}
+
+.plans .plan-container .content .details-btn {
+  position: relative;
+  top: -15px;
+  margin: 0 0 -1rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.feedbacks .blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+.whatsapp-footer {
+  padding: 4rem 0 0 0;
+  background-color: #1ebea5;
+  color: #fff;
+  text-align: center;
+}
+
+.whatsapp-footer .title {
+  font-size: 1.4rem;
+}
+
+.whatsapp-footer .whats-number {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+  .whatsapp-footer .whats-number {
+    font-size: 1.8rem;
+  }
+}
+
+.whatsapp-footer .copyright {
+  margin: 4rem 0 2rem 0;
+}
+
+.whatsapp-footer .copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.whatsapp-footer .copyright p .fa-heart {
+  color: #ff0000;
+}
+
+.whatsapp-footer a,
+.whatsapp-footer a:hover,
+.whatsapp-footer a:focus,
+.whatsapp-footer a:active {
+  color: #fff;
+  text-decoration: none;
+}
