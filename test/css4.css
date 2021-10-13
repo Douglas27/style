@@ -1,0 +1,789 @@
+@charset "UTF-8";
+
+/* --- EWRporta2.css --- */
+
+.xenForm .textHeading .selectAll { float: right; }
+.xenForm .categoryUnit li { display: inline-block; width: 185px; }
+.xenForm .categoryUnit dd { padding-right: 0px; }
+
+.authorUnit
+{
+	
+}
+.authorUnit .authorImage .img
+{
+	display: block;
+float: left;
+width: 150px;
+height: 200px;
+
+}
+.authorUnit .secondaryContent
+{
+	margin-left: 160px;
+
+}
+.authorUnit .secondaryContent .name
+{
+	font-size: 28px;
+
+}
+.authorUnit .secondaryContent .muted
+{
+	margin-bottom: 15px;
+
+}
+.authorUnit .secondaryContent .controls { float: right; margin-right: 10px; }
+.authorUnit .secondaryContent .avatar { float: right; }
+/* clearfix */ .authorUnit { zoom: 1; } .authorUnit:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+.keyIcon
+{
+	background-image: url('styles/uix/xenforo/xenforo-ui-sprite.png');
+background-repeat: no-repeat;
+margin: 0 4px 0 0;
+float: left;
+width: 16px;
+height: 16px;
+
+}
+.keyIcon.category
+{
+	background-position: 0px 1px;
+margin-top: 3px;
+width: 14px;
+
+}
+.keyIcon.comments
+{
+	background-position: -65px -16px;
+width: 14px;
+
+}
+.keyIcon.redirect
+{
+	background-position: -48px -16px;
+margin-top: 3px;
+
+}
+.keyIcon.sticky
+{
+	background-position: 0px -16px;
+
+}
+.keyIcon.views
+{
+	background-position: -144px -17px;
+width: 18px;
+
+}
+
+.xenForm .date
+{
+	background-image: url("styles/8wayrun/calendar.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.copyright { text-align: center; font-size: 11px; margin: 10px; clear: both; }
+
+/* --- EWRporta2_ArticleList.css --- */
+
+.articleItem
+{
+	
+}
+.articleItem .subHeading
+{
+	font-size: 18px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+.articleItem .metaData
+{
+	padding-bottom: 5px;
+margin-bottom: 10px;
+border-bottom: 1px dashed rgb(250, 250, 250);
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+.articleItem .metaData .statData { margin-left: 10px; float: right; }
+.articleItem .excerptContent
+{
+	
+}
+.articleItem .sectionFooter
+{
+	
+}
+.articleItem .sectionFooter .continue
+{
+	float: right;
+
+}
+.articleItem .sectionFooter .categories
+{
+	margin-right: 90px;
+overflow: hidden;
+
+}
+.articleItem .sectionFooter .categories li
+{
+	display: inline-block;
+
+}
+
+/* clearfix */ .articleItem .primaryContent { zoom: 1; } .articleItem .primaryContent:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+/* clearfix */ .articleItem .sectionFooter { zoom: 1; } .articleItem .sectionFooter:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+.articleItem .dateBlock
+{
+	margin: 10px 10px 0px -20px;
+text-align: center;
+float: left;
+position: relative;
+z-index: 100;
+
+}
+.articleItem .dateBlock .heading
+{
+	padding-bottom: 5px;
+margin: 0;
+text-transform: uppercase;
+
+}
+.articleItem .dateBlock .secondaryContent
+{
+	font-weight: bold;
+font-size: 24px;
+padding: 5px;
+
+}
+
+.articleItem .excerptOffset { margin-left: 32px; }
+.articleItem .headerBlock a { display: block; background-size: 100%; line-height: 0; }
+.articleItem .headerBlock a img { max-width: 100%; }
+
+.articleItem .messageUserBlock
+{
+	margin-left: 10px;
+float: right;
+
+}
+.articleItem .messageUserBlock a
+{
+	background-size: 100%;
+display: block;
+line-height: 0;
+
+}
+.articleItem .messageUserBlock a img
+{
+	max-width: 200px;
+height: auto;
+
+}
+
+.ArticlesMason.articlesGrid
+{
+	margin: 5px
+		-5px
+		-5px;
+}
+.ArticlesMason.articlesGrid .articleItem
+{
+	display: inline-block;
+vertical-align: top;
+width: 50%;
+
+}
+.ArticlesMason.articlesGrid .articleItem .sectionMain
+{
+	margin: 5px;
+}
+
+
+@media (max-width:800px)
+{
+	.Responsive .ArticlesMason.articlesGrid .articleItem
+	{
+		
+	}
+}
+@media (max-width:610px)
+{
+	.Responsive .ArticlesMason.articlesGrid .articleItem
+	{
+		width: 100%;
+
+	}
+}
+@media (max-width:480px)
+{
+	.Responsive .ArticlesMason.articlesGrid .articleItem
+	{
+		
+	}
+}
+
+
+.articleControl
+{
+	display: none;
+	font-size: 10px;
+text-align: center;
+position: fixed;
+right: 10px;
+bottom: 0;
+z-index: 1000;
+
+}
+.articleControl .resume { display: none; }
+.articleControl .resume .muted { margin-bottom: 5px; }
+
+#infscr-loading
+{
+	background-color: #FFFFFF;
+padding: 10px;
+margin: 10px auto;
+border: 1px solid rgb(240, 240, 240);
+border-radius: 10px;
+position: fixed;
+right: 10px;
+bottom: 0;
+z-index: 1001;
+text-align: center;
+
+}
+
+
+@media (max-width:480px)
+{
+	.Responsive .articlesGrid .articleItem .messageUserBlock
+	{
+		display: inline-block;
+		float: none;
+		margin-bottom: 10px;
+		white-space: nowrap;
+	}
+}
+
+
+/* --- EWRporta2_Featured.css --- */
+
+.featured {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.featured .panel {
+  border: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.featured-columns {
+  display: flex;
+}
+
+.featured * {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.featured-left {
+  margin-right: 5px;
+}
+
+.featured-right {
+  margin-left: 5px;
+}
+
+.featured-left, .featured-right {
+  flex: 1;
+}
+
+.featured-left .panel {
+  height: 460px;
+}
+
+.featured-right .panel:last-child {
+  margin-bottom: 0;
+}
+
+.featured-right .panel {
+  margin-bottom: 10px;
+  height: 225px;
+}
+
+.featured .featured-info {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to bottom, rgba(19, 165, 196, 0) 0%, rgba(19, 165, 196, 0) 40%, rgba(0, 0, 0, 0.65) 89%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.featured .featured-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.featured .featured-info .featured-info-tag {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.featured .featured-info .featured-info-title {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.featured .featured-info a:hover {
+  color: #d4d4d4;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  transition: transform .3s;
+}
+
+.panel-body:hover .featured-image {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03); -ms-transform: scale(1.03);transform: scale(1.03);
+}
+
+/* --- EWRporta2_Global.css --- */
+
+.leftContainer { float: right; margin-left: -260px; width: 100%; }
+.leftContent { margin-left: 260px; }
+.leftSidebar { float: left; width: 250px; }
+
+.splitWidgets .section:first-child,
+.splitWidgets .sectionMain:first-child { margin-top: 0; }
+
+.sidebar.noFloats { float: none; width: auto !important; margin-bottom: 10px; }
+.sidebar.a-leftWidgets { float: left; width: 350px; }
+.sidebar.a-rightWidgets { margin-left: 360px; }
+.sidebar.b-leftWidgets { float: left; width: 350px; }
+.sidebar.b-rightWidgets { margin-left: 360px; }
+.sidebar.footerWidgets { clear: both; }
+/* clearfix */ .splitWidgets { zoom: 1; } .splitWidgets:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+.copyright { text-align: center; font-size: 11px; margin: 10px; }
+
+
+	@media (max-width:800px)
+	{
+		.Responsive .leftContainer { float: none; margin: 0 auto; }
+		.Responsive .leftContent { margin-left: 0; }
+	}
+	@media (max-width:610px)
+	{
+		.Responsive .sidebar.b-leftWidgets { float: none; margin: 0 auto; }
+		.Responsive .sidebar.b-rightWidgets { margin-left: 0px; }
+	}
+
+
+/* --- login_bar.css --- */
+
+/** Login bar basics **/
+
+#loginBar .pageContent 
+{
+	color: rgb(250, 250, 250);
+background-color: rgb(107, 166, 94);
+
+}
+
+	
+
+	#loginBar .pageContent
+	{
+		padding-top: 0;
+		position: relative;
+		_height: 0px;
+	}
+
+	#loginBar a
+	{
+		color: rgba(255,255,255,.8);
+
+	}
+
+	#loginBar form
+	{
+		padding: 16px 0;
+margin: 0 auto;
+display: none;
+line-height: 20px;
+position: relative;
+
+	}
+
+		#loginBar .xenForm .ctrlUnit,
+		#loginBar .xenForm .ctrlUnit > dt label
+		{
+			margin: 0;
+			border: none;
+		}
+
+		#loginBar .xenForm .ctrlUnit > dd
+		{
+			position: relative;
+		}
+
+	#loginBar .lostPassword,
+	#loginBar .lostPasswordLogin
+	{
+		font-size: 11px;
+	}
+
+	#loginBar .rememberPassword
+	{
+		font-size: 11px;
+	}
+
+	#loginBar .textCtrl
+	{
+		color: #FFFFFF;
+background: url(rgba6563.png?r=0&amp;g=0&amp;b=0&amp;a=38); background: rgba(0, 0, 0, 0.15); _filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#26000000,endColorstr=#26000000);
+border-color:  rgb(0, 0, 0); border-color:  rgba(0, 0, 0, 0.15); _border-color:  rgb(0, 0, 0);
+
+	}
+
+	#loginBar .textCtrl[type=text]
+	{
+		font-weight: bold;
+
+	}
+
+	#loginBar .textCtrl:-webkit-autofill /* http://code.google.com/p/chromium/issues/detail?id=1334#c35 */
+	{
+		background: url(rgba6563.png?r=0&amp;g=0&amp;b=0&amp;a=38) !important; background: rgba(0, 0, 0, 0.15) !important; _filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#26000000,endColorstr=#26000000);
+		color: #FFFFFF;
+	}
+
+	#loginBar .textCtrl:focus
+	{
+		background: url(rgbac7f3.png?r=0&amp;g=0&amp;b=0&amp;a=76) none; background: rgba(0, 0, 0, 0.3) none; _filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+
+	}
+
+	#loginBar input.textCtrl.disabled
+	{
+		color: rgb(118, 118, 118);
+background-color: #000;
+border-style: dashed;
+
+	}
+
+	#loginBar .button
+	{
+		min-width: 85px;
+		*width: 85px;
+	}
+
+		#loginBar .button.primary
+		{
+			font-weight: bold;
+		}
+
+/** changes when eAuth is present **/
+
+#loginBar form.eAuth
+{
+	-x-max-width: 720px; /* normal width + 170px */
+}
+
+	#loginBar form.eAuth .ctrlWrapper
+	{
+		border-right:  1px dotted rgb(250, 250, 250); border-right:  1px dotted rgba(250, 250, 250, .5); _border-right:  1px dotted rgb(250, 250, 250);
+		margin-right: 220px;
+		box-sizing: border-box;
+	}
+
+	#loginBar form.eAuth #eAuthUnit
+	{
+		position: absolute;
+		top: 0px;
+		right: 0;
+		width: 200px;
+	}
+
+		#eAuthUnit li
+		{
+			margin-top: 10px;
+			line-height: 0;
+		}
+
+/** handle **/
+
+#loginBar #loginBarHandle label 
+{
+	font-weight: bold;
+font-size: 13px;
+color: #FFF;
+background-color: rgb(107, 166, 94);
+padding: 0 8px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+position: absolute;
+right: 0;
+display: inline-block;
+text-align: center;
+z-index: 1;
+line-height: 30px;
+height: 30px;
+
+}
+
+
+@media (max-width:800px)
+{
+	.Responsive #loginBar form.eAuth .ctrlWrapper
+	{
+		border-right: none;
+		margin-right: 0;
+		padding-top: 16px;
+	}
+
+	.Responsive #loginBar form.eAuth #eAuthUnit
+	{
+		position: static;
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+@media (max-width:610px)
+{
+	.Responsive #loginBar .xenForm .ctrlUnit > dd {padding-left: 0; padding-right: 0;}
+	.Responsive #loginBar form.eAuth #eAuthUnit {width: auto; margin-left: 16px; margin-right: 16px;}
+}
+
+
+
+/* --- message_user_info.css --- */
+
+.messageUserInfo
+{
+	background-color: #FFFFFF;
+border: 1px solid rgb(226, 226, 226);
+border-radius: 0;
+float: left;
+width: 232px;
+
+}
+
+	.messageUserBlock
+	{
+		
+		position: relative;
+	}
+		.messageUserBlock div.avatarHolder
+		{
+			background-color: #FFFFFF;
+padding: 8px;
+border-radius: 0;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+text-align: center;
+
+
+			position: relative;
+		}
+			.messageUserBlock div.avatarHolder .avatar
+			{
+				display: block;
+				font-size: 0;
+			}
+			.messageUserBlock div.avatarHolder .onlineMarker
+			{
+				position: absolute;
+				top: 7px;
+				left: 7px;
+				
+				color: rgb(127, 185, 0);
+border: 7px solid transparent;
+border-top-color: rgb(127, 185, 0);
+border-left-color: rgb(127, 185, 0);
+border-top-left-radius: 5px;
+border-top-right-radius: 3px;
+border-bottom-left-radius: 3px;
+top: -1px;
+left: -1px;
+
+			}
+		.messageUserBlock h3.userText
+		{
+			background-color: rgb(240, 240, 240);
+padding: 8px;
+border: 0 solid rgb(226, 226, 226);
+border-top-width: 1px;
+border-bottom-width: 1px;
+
+		}
+		.messageUserBlock .userBanner
+		{
+			display: block;
+			margin-bottom: 5px;
+			margin-left: -14px;
+			margin-right: -14px;
+		}
+		.messageUserBlock .userBanner:last-child
+		{
+			margin-bottom: 0;
+		}
+		.messageUserBlock a.username
+		{
+			color: rgb(83, 83, 83);
+display: block;
+overflow: hidden;
+font-weight: 600;
+
+		}
+		.messageUserBlock .userTitle
+		{
+			font-size: 11px;
+display: block;
+clear: both;
+
+		}
+		.messageUserBlock .extraUserInfo
+		{
+			font-size: 11px;
+padding: 4px 6px;
+border: 0 solid rgb(226, 226, 226);
+border-radius: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+
+		}
+			.messageUserBlock .extraUserInfo dl
+			{
+				margin: 2px 0 0;
+			}
+			
+			.messageUserBlock .extraUserInfo dl:first-child {margin-top: 0;}
+
+			.messageUserBlock .extraUserInfo img
+			{
+				max-width: 100%;
+			}
+		.messageUserBlock .arrow
+		{
+			position: absolute;
+			top: 10px;
+			right: -10px;
+			display: block;
+			width: 0px;
+			height: 0px;
+			line-height: 0px;
+			border: 10px solid transparent;
+			border-left-color: rgb(226, 226, 226);
+			-moz-border-left-colors: rgb(226, 226, 226);
+			border-right: none;
+			/* Hide from IE6 */
+			_display: none;
+		}
+			.messageUserBlock .arrow span
+			{
+				position: absolute;
+				top: -10px;
+				left: -11px;
+				display: block;
+				width: 0px;
+				height: 0px;
+				line-height: 0px;
+				border: 10px solid transparent;
+				border-left-color: #FFFFFF;
+				-moz-border-left-colors: #FFFFFF;
+				border-right: none;
+			}
+
+
+
+
+/* clearfix */ .uix_userTextInner { zoom: 1; } .uix_userTextInner:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+@media (max-width:610px)
+{
+	.Responsive .messageUserInfo
+	{
+		float: none;
+		width: auto;
+		margin-bottom: 5px;
+	}
+
+	.Responsive .messageUserBlock
+	{
+		overflow: hidden;
+		position: relative;
+	}
+
+	.Responsive .messageUserBlock div.avatarHolder
+	{
+		float: left;
+		padding: 5px;
+	}
+
+		.Responsive .messageUserBlock div.avatarHolder .avatar img
+		{
+			width: 48px;
+			height: 48px;
+		}
+
+	.Responsive .messageUserBlock h3.userText
+	{
+		margin-left: 64px;
+	}
+	.Responsive .messageUserBlock .userBanner
+	{
+		max-width: 150px;
+		margin-left: 0;
+		margin-right: 0;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		position: static;
+		display: inline-block;
+	}
+		.Responsive .messageUserBlock .userBanner span
+		{
+			display: none;
+		}
+
+	.Responsive .messageUserBlock .extraUserInfo
+	{
+		display: none !important;
+	}
+
+	.Responsive .messageUserBlock .arrow
+	{
+		display: none;
+	}
+}
+
+
+/* CSS returned from cache. */
